@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/api-meli/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/api-meli/static/js/main.9b3ae0c0.chunk.js",
+    "main.js.map": "/api-meli/static/js/main.9b3ae0c0.chunk.js.map",
+    "runtime-main.js": "/api-meli/static/js/runtime-main.6fa59c1d.js",
+    "runtime-main.js.map": "/api-meli/static/js/runtime-main.6fa59c1d.js.map",
+    "static/css/2.a75f5a2c.chunk.css": "/api-meli/static/css/2.a75f5a2c.chunk.css",
+    "static/js/2.2e3e27c6.chunk.js": "/api-meli/static/js/2.2e3e27c6.chunk.js",
+    "static/js/2.2e3e27c6.chunk.js.map": "/api-meli/static/js/2.2e3e27c6.chunk.js.map",
+    "static/js/3.2c7e920f.chunk.js": "/api-meli/static/js/3.2c7e920f.chunk.js",
+    "static/js/3.2c7e920f.chunk.js.map": "/api-meli/static/js/3.2c7e920f.chunk.js.map",
+    "index.html": "/api-meli/index.html",
+    "static/css/2.a75f5a2c.chunk.css.map": "/api-meli/static/css/2.a75f5a2c.chunk.css.map",
+    "static/css/main.8c8b27cf.chunk.css.map": "/api-meli/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.2e3e27c6.chunk.js.LICENSE.txt": "/api-meli/static/js/2.2e3e27c6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6fa59c1d.js",
+    "static/css/2.a75f5a2c.chunk.css",
+    "static/js/2.2e3e27c6.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.9b3ae0c0.chunk.js"
+  ]
+}
