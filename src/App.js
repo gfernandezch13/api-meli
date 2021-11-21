@@ -9,7 +9,7 @@ function App() {
   console.log(cart);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Routes>
           <Route path="/" element={<HomeContainer shoppingCart={cart} />} />
