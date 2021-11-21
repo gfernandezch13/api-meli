@@ -21,6 +21,7 @@ const ProductsContainer = ({ setCart }) => {
 
   useEffect(() => {
     setCart(shoppingCart);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shoppingCart]);
 
   const addProductToCart = (product) => setShoppingCart([...shoppingCart, product]);
