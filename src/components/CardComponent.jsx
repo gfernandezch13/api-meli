@@ -11,7 +11,7 @@ const CardComponent = ({ product, addProductToCart }) => {
           content.
         </p>
         <button className="btn btn-primary" onClick={() => addProductToCart(product.id)}>
-          Aregar carrito
+          Add to cart
         </button>
       </div>
     </div>
