@@ -1,28 +1,19 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 import CardComponent from '../components/CardComponent';
 import InfoBarComponent from '../components/InfoBarComponent';
+import { EcommerceContext } from '../context/EcommerceContext';
 
-const ProductsContainer = ({ setCart }) => {
+const ProductsContainer = () => {
   const [searchInput, setSearchInput] = useState('');
-  const [products, setProducts] = useState([]);
-  const [shoppingCart, setShoppingCart] = useState([]);
+  const { products, shoppingCart, setShoppingCart, getProducts } = useContext(EcommerceContext);
+  const { searchParam } = useParams();
+  console.log(searchParam);
 
   useEffect(() => {
-    const getProducts = async (searchParam) => {
-      const response = await fetch(
-        `https://api.mercadolibre.com/sites/MLA/search?q=${searchParam}`
-      );
-      const responseJson = await response.json();
-      setProducts(responseJson.results);
-    };
-
-    getProducts(searchInput);
-  }, [searchInput]);
-
-  useEffect(() => {
-    setCart(shoppingCart);
+    getProducts(searchParam ? searchParam : searchInput);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [shoppingCart]);
+  }, [searchInput]);
 
   const addProductToCart = (product) => setShoppingCart([...shoppingCart, product]);
   const handleKeyPress = (e) => e.charCode === 13 && setSearchInput(e.target.value);

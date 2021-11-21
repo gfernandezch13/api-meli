@@ -1,6 +1,9 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { EcommerceContext } from '../context/EcommerceContext';
 
-const HomeContainer = ({ shoppingCart }) => {
+const HomeContainer = () => {
+  const { shoppingCart } = useContext(EcommerceContext);
   return (
     <>
       <Link to="/products">Go products</Link>
