@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/api-meli/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/api-meli/static/js/main.abce1d92.chunk.js",
-    "main.js.map": "/api-meli/static/js/main.abce1d92.chunk.js.map",
+    "main.js": "/api-meli/static/js/main.fb6299eb.chunk.js",
+    "main.js.map": "/api-meli/static/js/main.fb6299eb.chunk.js.map",
     "runtime-main.js": "/api-meli/static/js/runtime-main.6b05fd15.js",
     "runtime-main.js.map": "/api-meli/static/js/runtime-main.6b05fd15.js.map",
     "static/css/2.a75f5a2c.chunk.css": "/api-meli/static/css/2.a75f5a2c.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.a75f5a2c.chunk.css",
     "static/js/2.037ace60.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.abce1d92.chunk.js"
+    "static/js/main.fb6299eb.chunk.js"
   ]
 }
