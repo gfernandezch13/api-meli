@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import CardComponent from '../components/CardComponent';
 import InfoBarComponent from '../components/InfoBarComponent';
 
-const ProductsContainer = () => {
+const ProductsContainer = ({ setCart }) => {
   const [searchInput, setSearchInput] = useState('');
   const [products, setProducts] = useState([]);
   const [shoppingCart, setShoppingCart] = useState([]);
@@ -18,6 +18,10 @@ const ProductsContainer = () => {
 
     getProducts(searchInput);
   }, [searchInput]);
+
+  useEffect(() => {
+    setCart(shoppingCart);
+  }, [shoppingCart]);
 
   const addProductToCart = (product) => setShoppingCart([...shoppingCart, product]);
   const handleKeyPress = (e) => e.charCode === 13 && setSearchInput(e.target.value);
